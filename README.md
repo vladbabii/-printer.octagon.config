@@ -1,2 +1,1 @@
-# -printer.octagon.config
-Printer - Octagon - Config
+# Printer - Octagon - Config
