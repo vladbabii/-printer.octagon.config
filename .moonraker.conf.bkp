@@ -5,7 +5,7 @@ enable_debug_logging: False
 klippy_uds_address: /tmp/klippy_uds
 
 [database]
-database_path: /home/pi/data/.moonraker_database
+database_path: /home/pi/.moonraker_database
 
 [authorization]
 trusted_clients:
@@ -45,24 +45,6 @@ type: web_beta
 repo: fluidd-core/fluidd
 path: ~/fluidd
 refresh_interval: 24
-
-[power printer_main]
-type: gpio
-off_when_shutdown: False
-locked_while_printing: True
-restart_klipper_when_powered: True
-restart_delay: 3
-pin: gpio26
-initial_state: off
-
-[power steppers_xye]
-type: gpio
-off_when_shutdown: False
-locked_while_printing: True
-restart_klipper_when_powered: False
-restart_delay: 3
-pin: gpio19
-initial_state: off
 
 #[update_manager KlipperScreen]
 #type: git_repo
